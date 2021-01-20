@@ -37,17 +37,18 @@
 					System.out.println(""); /// *** Pula 1 linha
 					preco = teclado.nextDouble(); /// *** O Comando para digitar o Preço do Produto
 					System.out.println(""); /// *** Pula 1 linha 
-					quantTotal += preco;
+					quantTotal += preco; /// *** A Quantidade Total vai somando o Preço
 				
-				if (i == mercad) {
+				if (i == mercad) { /// *** Se a Variável i for igual ao Dígito da quantidade de mercadoria
 					System.out.println("A quantidade total do Valor da Venda é de: R$ " + quantTotal);
-					System.out.println("Fim do Programa.");
+					/// *** Imprima A quantidade total do Valor da Venda é de: + o valor total das compras
+					System.out.println("Fim do Programa."); /// *** Encerra o Programa
 			
-				}
+				} /// *** Finaliza o If
 						
-				} 
-			} catch (Exception e) {
-				System.out.println("Erro de Processamento: " + e.getMessage());
+				} /// *** Fim do laço For 
+			} catch (Exception e) { /// *** Cai no Catch
+				System.out.println("Erro de Processamento: " + e.getMessage()); /// *** Mensagem de erro do Catch
 			}
 		}
 	}
